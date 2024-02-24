@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: Text('Hello World!'),
-    // home: MyApp(),
+    home: MyApp(),
   ));
 }
 
@@ -13,7 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("Basics Project"),
+      ),
+      body: Text('Hello World!'),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () => {
+            
+          },
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
